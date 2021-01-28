@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.custom-raleway-font {
+    font-family: 'Raleway', sans-serif;
+}
+
+.custom-roboto-font {
+    font-family: 'Roboto', sans-serif;
+}
+.home__p {
+    max-width: 74%;
+    margin-top: 100px;
+}
+
+
+body {
+    background: gray;
+    color: white;
+    width: 100vw;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.circle__container {
+    width: 200px;
+    height: 200px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #425465;
+    background: #425465;
+    position: absolute;
+}
+.circle:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+.inner__circle__text {
+    position: relative;
+    top: 75px;
+    left: 95px;
+    font-size: 53px;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #222222;
+    display: none;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav__link:active {
+    color: #009578;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+#app {
+    margin: 2em;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+a {
+    color: #009579;
+}
+
+.linktree {
+    text-align: center;
+}
+
+.linktree__links {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+@media (max-width: 992px) { 
+    .nav__desktop{
+        display: none;
+    }
+    .nav {
+        display: flex;
+    }
+    body {
+        margin: 0 0 55px 0;
+    }
+}
+
+.notFound-container {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-top: 100px;
+}
